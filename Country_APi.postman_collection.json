@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "11dec0bf-5e47-4ce4-9483-125f8ce47327",
+		"name": "Country_APi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All_country",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.first.org/data/v1/countries",
+					"protocol": "https",
+					"host": [
+						"api",
+						"first",
+						"org"
+					],
+					"path": [
+						"data",
+						"v1",
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ASIA_APi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.first.org/data/v1/countries?region=asia&limit=5&pretty=true",
+					"protocol": "https",
+					"host": [
+						"api",
+						"first",
+						"org"
+					],
+					"path": [
+						"data",
+						"v1",
+						"countries"
+					],
+					"query": [
+						{
+							"key": "region",
+							"value": "asia"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						},
+						{
+							"key": "pretty",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
